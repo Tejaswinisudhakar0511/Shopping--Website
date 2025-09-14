@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our WebPage</title>
+  <link rel="stylesheet" href="ourwebsite.css" />
+  <style>
+    body{
+      background-color: dodgerblue;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .main-title {
+  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  background: linear-gradient(90deg, #ff512f, #dd2476, #ff512f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: block;   /* Changed from inline-block */
+  overflow: hidden;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shine 2s infinite;
+}
+@keyframes shine {
+  100% { left: 100%; }
+}
+    #Room{
+      display: flex;
+      flex-wrap: wrap;          
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .Bag, .Bag1 {
+      transition: all 0.3s ease-in-out;
+      background-color: gainsboro;
+      width: 350px;
+      font-size: larger;
+      text-align: center;
+      border: 10px solid rgb(255,255,255);
+      border-radius: 6px;
+      padding: 12px;
+      box-sizing: border-box;
+    }
+
+    img{
+      width: 200px;             
+      height: 200px;
+      display: block;
+      margin: 0 auto 10px;
+      border: 3px solid white;  
+      object-fit: cover;
+    }
+
+    .Bag:hover, .Bag1:hover {
+      transform: scale(0.95) rotate(3deg);
+      color: black;
+    }
+
+    button{
+      background-color: black;
+      color: gainsboro;
+      width: 200px;
+      border: 3px solid white;
+      border-radius: 30px;
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+    button:active{
+      background-color: dodgerblue;
+      color: white;
+    }
+    footer {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(90deg, #ff512f, #dd2476, #ff512f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: block;   /* Changed from inline-block */
+  overflow: hidden;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  100% { left: 100%; }
+
+}
+
+  </style>
+</head>
+<body>
+  <h1 class="main-title">Deal Sphere</h1>
+
+  <div id="Room">
+
+    <div class="Bag">
+      <h2>Shirt</h2>
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTklezuOoTOT20UcHVsTH9Cijv1i-cllqI6IxpQmNXr1GAxrVVO_7WWO8LYffQbjhbarZwUs0lxEa_-hwXpBc4zWsf8rAvErWDyJMf1liRadWzl5QnL2Y9GeA" alt="Shirt">
+      <button>Price: $10</button>
+    </div>
+
+    <div class="Bag">
+      <h2>Bag</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTNA1blEAitbMV2J5ryd0kfvJBNbBlSChvXniTBUbJJOevIYXNHgvpiOAvyfeQGN0rZvCoVICqLQMY1cU4llZI62YGuhmIo-MZ_dhz5FX_buII24qFZNYmiWA" alt="Bag">
+      <button>Price: $5</button>
+    </div>
+
+
+    <div class="Bag1">
+      <h2>Perfume</h2>
+      <img src="https://iol-prod.appspot.com/image/59301ba50ca856b2ae094480e76e4be24c20f88e/1333/jpeg" alt="Perfume">
+      <button>Price: $15</button>
+    </div>
+
+    <div class="Bag1">
+        <h2>Headphones</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT90a6OD-ofY7g3UxX-wk9sxJ_EIecdBcXag&s" alt="Headphones" />
+        <button>Price: $20</button>
+    </div>
+
+    <div class="Bag1">
+        <h2>Camera</h2>
+        <img src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?fm=jpg&q=60&w=3000&ixlib=
+        rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhbWVyYXxlbnwwfHwwfHx8MA%3D%3D" alt="Camera" />
+        <button>Price: $25</button>
+    </div>
+   <div class = "Bag">
+        <h2> Shoe</h2>
+        <img 
+        src = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS7AtRCJ3w0xNa__ZqjNZH-WiAQxldnU_
+        4fXMca4L9hmkXG5r9Db07RBajlI9l879M_jVrzGp6pqZQVHsLg4EjbJ5uXe9wKbNQm-lc7tGA1 "
+        alt ="Main image"/>
+        <button>Price: $10</button>
+    </div>
+    <div class="Bag1">
+        <h2>Watch</h2>
+        <img src="https://images.unsplash.com/photo-1615368144592-44708889c926?fm=jpg&q=60&w=3000&ixlib=rb-4.1.
+        0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D" alt="Watch" />
+        <button>Price: $5</button>
+    </div>
+    <div class="Bag1">
+        <h2>Curtains</h2>
+        <img src="https://drapestory.in/cdn/shop/files/DS516D_1.jpg?v=1685620243" alt="Curtains" />
+        <button>Price: $5</button>
+    </div>
+      <div class="Bag1">
+        <h2>Skincare Products</h2>
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0
+        &ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2tpbiUyMGNhcmUlMjBwcm9kdWN0c3xlbnwwfHwwfHx8MA%3D%3D" alt="Skincare Products" />
+        <button>Price: $15</button>
+    </div>
+      <div class="Bag1">
+        <h2>Cookware</h2>
+        <img src="https://5.imimg.com/data5/MF/UW/MY-22740806/15-piece-nonstick-stay-cool-handle-cookware-set-2c-black.jpg" alt="Cookware" />
+        <button>Price: $25</button>
+    </div>
+      <div class="Bag1">
+        <h2>Fashion Jewelry</h2>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/ver110124objfashionjewelry-002-cropped-670966234acd7.jpg?resize=980:*" alt="Fashion Jewelry" />
+        <button>Price: $20</button>
+    </div>
+    
+      <div class="Bag1">
+        <h2>Stationery Items</h2>
+        <img src="https://www.parasartfever.com/media/magefan_blog/Office_Stationery_Items_List_for_Small_Business.jpg" alt="Stationery Items" />
+        <button>Price: $5</button>
+    </div>
+  </div> 
+  <footer>shop@dealsphere.com</footer>
+</body>
+</html>
